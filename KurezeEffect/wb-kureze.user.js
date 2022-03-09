@@ -2,8 +2,8 @@
 // @author         fisher01
 // @name           IITC plugin: Wasabee: Mark Portals with Kureze Effect ornaments
 // @category       Misc
-// @version        0.1.1
-// @description    Automark Portals for Kureze Effect Phase 2
+// @version        0.2.0
+// @description    Automark Portals for Kureze Effect
 // @id             wb-kureze
 // @updateURL      https://github.com/SebastienForay/Wasabee-IITC-Plugins/raw/main/KurezeEffect/wb-kureze.meta.js
 // @downloadURL    https://github.com/SebastienForay/Wasabee-IITC-Plugins/raw/main/KurezeEffect/wb-kureze.user.js
@@ -19,7 +19,7 @@ if(typeof window.plugin !== 'function') window.plugin = function() {};
 //PLUGIN AUTHORS: writing a plugin outside of the IITC build environment? if so, delete these lines!!
 //(leaving them in place might break the 'About IITC' page or break update checks)
 plugin_info.buildName = 'fisher01';
-plugin_info.dateTimeVersion = '2022-02-05-120000';
+plugin_info.dateTimeVersion = '2022-03-09-000000';
 plugin_info.pluginId = 'wb-kureze';
 //END PLUGIN AUTHORS NOTE
 
@@ -73,8 +73,8 @@ function setup() {
   // this adds the "Wasabee: Kureze Phase 2" link to the IITC toolbox using JQuery syntax
   // the .click(kureze) instructs IITC to call the kureze function (above) when the link is clicked
   $("<a>")
-    .html("Wasabee: Kureze Phase 2")
-    .attr("title", "Mark Portals with Kureze Phase 2 ornaments")
+    .html("Wasabee: Kureze Effect")
+    .attr("title", "Mark Portals with Kureze Effect ornaments")
     .click(kureze)
     .appendTo("#toolbox");
 }
